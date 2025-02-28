@@ -1,0 +1,176 @@
+
+.Header {
+    background-color: var(--red);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    /* position: relative; */
+}
+
+.Header img {
+    width: 12rem;
+    padding: 1.5rem;
+    margin-left: 1rem;
+} 
+
+.Header h1 {
+    font-size: 3rem;
+    color: var(--nc-tx-1);
+    margin-left: 1rem;
+}
+
+.Header p {
+    font-size: 1rem;
+    color: var(--nc-tx-2);
+    margin-left: 4.5rem;
+    margin-top: -1rem;
+}
+
+.container {
+    background-color: var(--black);
+}
+
+.section-1 {
+    background-color: var(--blue);
+    width: 100vw; /* Full width of the viewport */
+    margin-left: -50;
+    padding: 3rem 0; /* Optional: Adds spacing above and below the table */
+}
+
+.section-1 .schedule {
+     max-width: 100%; /*Or any width you prefer for the table */
+     margin: 0 auto; /*Centers the table */
+}
+
+.section-2 {
+    padding: 2rem;
+}
+
+.info {
+    font-size: 1rem;
+}
+
+.section-3 {
+    background-color: var(--red);
+    padding: 3rem;
+}
+
+.section-3 img {
+    width: 13rem;
+    position: relative;
+    left: .2rem;
+    bottom: 2.5rem;
+    padding: 2rem;
+}
+
+.text-2 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.section-4 {
+    background-color: var(--blue);
+    padding: 3rem;
+}
+
+.section-4 img {
+    width: 17rem;
+    position: relative;
+    right: 1.7rem;
+    top: .7rem;
+    padding: 2rem;
+}
+
+.text-3 {
+    /* max-width: 70%; */
+    font-size: 1rem;
+    padding: 1rem;
+    /* position: relative; */
+    /* left: 12rem; */
+}
+
+.foot {
+    max-width: 70%;
+    margin: auto;
+    gap: 2rem;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+    .Header h1 {
+        font-size: 5rem;
+        margin-left: 7rem;
+    }
+
+    .Header p {
+        font-size: 1.5rem;
+        margin-left: 14rem;
+        margin-top: -2rem;
+    }
+
+    .Header img {
+        width: 20rem;
+        margin-left: 8rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .Header h1 {
+        font-size: 7rem;
+        margin-left: 5rem;
+        /* padding: 5rem; */
+    }
+
+    .Header p {
+        font-size: 2rem;
+        margin-left: 15rem;
+        margin-top: -2rem;
+    }
+
+    .Header img {
+        width: 30rem;
+        margin-left: 72rem;
+        margin-top: -20rem;
+    }
+
+    .section-2 {
+        gap: 10rem;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 10rem;
+    }
+
+    .info {
+        font-size: 1.7rem;
+    }
+
+    .section-3 img {
+        width: 32rem;
+        position: relative;
+        left: 10rem;
+        top: .5rem;
+        padding: 2rem;
+    }
+
+    .text-2 {
+        max-width: 70%;
+        font-size: 1.7rem;
+    }
+
+    .section-4 img {
+        width: 35rem;
+        position: relative;
+        left: 7rem;
+        top: 5rem;
+        padding: 2rem;
+    }
+
+    .text-3 {
+        max-width: 70%;
+        font-size: 1.7rem;
+        position: relative;
+        left: 12rem;
+    }
+}

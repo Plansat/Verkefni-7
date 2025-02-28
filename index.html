@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarWars Day</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/1-Colors.css">
+    <link rel="stylesheet" href="css/4-navbar.css">
+    <link rel="stylesheet" href="css/7-Login.css">
+    <link rel="stylesheet" href="css/2-custom.css">
+    <link rel="stylesheet" href="css/3-grid.css">
+    <link rel="stylesheet" href="css/5-table.css">
+    <link rel="stylesheet" href="css/6-form.css">
+    <link rel="stylesheet" href="css/10-animation.css">
+    <link rel="stylesheet" href="css/9-checkbox.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="img/svg" href="images/Favicon.png">
+</head>
+<body>
+    <nav class="topnav">
+        <input type="checkbox" id="toggle">
+        <label for="toggle">&#9776;</label>
+        <section class="topmenu">
+            <a href="#StarWars">StarWars Day</a>
+            <a href="#Upplýsingar">Upplýsingar</a>
+            <a href="#FunFacts">Fun Facts</a>
+            <a href="#About">Aðeins um StarWars</a>
+            <a href="#Login">Innskráning</a>
+        </section>
+    </nav>
+    <header class="Header" id="StarWars">
+        <h1 class="animate__fadeInDown">StarWars Day</h1>
+        <p class="animate__fadeInDown">Skemmtilegasta Hátíðin</p>
+        <img src="images/Main.jpg" alt="" class="animate__fadeInDown">
+    </header>
+    <main class="container">
+        <section class="section-1">
+            <table class="schedule">
+                <thead>
+                    <tr>
+                        <th><span class="icon-home"></span> Staðsetning</th>
+                        <th><span class="icon-calendar"></span> Dagsetning</th>
+                        <th><span class="icon-lock"></span> Tími</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="WHERE">Húsdýra og Fjölskyldu garðurinn</td>
+                        <td data-label="WHEN">30. 4. 2025</td>
+                        <td data-label="WHEN">Kl: 15:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="WHERE">Húsdýra og Fjölskyldu garðurinn</td>
+                        <td data-label="WHEN">1. 5. 2025</td>
+                        <td data-label="WHEN">Kl: 16:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="WHERE">Húsdýra og Fjölskyldu garðurinn</td>
+                        <td data-label="WHEN">2. 5. 2025</td>
+                        <td data-label="WHEN">Kl: 14:30</td>
+                    </tr>
+                    <tr>
+                        <td data-label="WHERE">Húsdýra og Fjölskyldu garðurinn</td>
+                        <td data-label="WHEN">3. 5. 2025</td>
+                        <td data-label="WHEN">Kl: 17:00</td>
+                    </tr>
+                    <tr>
+                        <td data-label="WHERE">Húsdýra og Fjölskyldu garðurinn</td>
+                        <td data-label="WHEN">4. 5. 2025</td>
+                        <td data-label="WHEN">Kl: 15:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="col_2 section-2" id="Upplýsingar">
+            <div class="info">
+                <h1>Upplýsingar</h1>
+                <p>
+                    Núna kemur dagur fyrir þá sem hafa áhuga á StarWars. Þann 30. Apríl. til 4 . Maí. verður haldið upp á StarWars Day. Þetta er tími fyrir þá sem hafa áhuga á öllu 
+                    tengt mynda seríunum til að koma og tala saman eða berjast með geislasveriðn. (Foreldrar þurfa ekki að hafa áhyggjur því skylmingarnar verða undir eftirliti 
+                    og það verða settar reglur.)Þannig takið daginn frá því það verður svaka stuð þann 30. Apríl. til 4. Maí.
+                </p>
+            </div>
+            <div class="form">
+                <form method="get" action="takk.html" class="order" >
+                <fieldset>
+                <legend>Pöntunnarform</legend>
+                <section class="col_2">
+                    <p>
+                    <label>Fornafn: </label><br>
+                    <input type="text" name="first_name" required placeholder="First name">
+                    </p>
+                    <p>
+                        <label>Eftirnafn: </label><br>
+                        <input type="text" name="last_name" required placeholder="Last name">
+                    </p>
+                </section>
+                <p>
+                    <label>Kyn: </label>
+                    <label>
+                        | <input type="radio" name="gender" value="Male" required>
+                        Hann
+                    </label>
+                    <label>
+                        | <input type="radio" name="gender" value="Female">
+                        Hún
+                    </label>
+                    <label>
+                        | <input type="radio" name="gender" value="other-none-na">
+                        Hán
+                    </label>
+                </p>
+                <section class="col_2">
+                    <p>
+                        <label>Tölvupóstur: </label><br>
+                        <input type="email" name="email" required placeholder="Email address">
+                    </p>
+                    <p>
+                        <label>Símanúmer: </label><br>
+                        <input type="tel" name="phone"
+                        placeholder="Telephone (7 digits)"
+                        pattern="\d{3}(?:[\-\s]?)\d{4}"> <!--Regular Expressions-->
+                    </p>
+                </section>
+                <section class="col_2">
+                    <p>
+                    <label>Dagsetning</label><br>
+                    <input type="date" name="dagsetning">
+                    </p>
+                    <p>
+                    <label>Tímasetning</label><br>
+                    <input type="time" name="Tími">
+                    </p>
+                    </section>
+                    <p>
+                        <label>Skilaboð</label><br>
+                        <textarea type="text" name="Message" placeholder="Message" rows="4" cols="58.5"></textarea>
+                    </p>
+                    <p>
+                    <label>
+                        <input type="checkbox" value="termsX">
+                        Sendið mér upplýsingar um aðrar hátíðir líkt þessari <br>
+                    </label>
+                    </p>
+                    <p>
+                    <button>Sign up</button>
+                    <!--<button type="reset">Reset form</button>
+                    <button disabled="disabled">Disabled</button>-->
+                    </p>
+                </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class="col_2 section-3" id="About">
+            <section id="slideset6">
+                <div>
+                    <img src="images/Mynd2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/Mynd3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="images/Mynd4.jpg" alt="">
+                </div>
+            </section>
+            <div class="text-2">
+                <h2>Aðeins um StarWars</h2>
+                <p>
+                    StarWars eru 9 talsins og fyrsta myndin kom út árið 26. December 1977. 
+                    Sem var fyrir næstum því 28 árum síðan. StarWars fjallar um tvær hliðar eina góða 
+                    og eina vonda hlið. Góða hliðin er með bláu og grænu geislasverðin sem allir þekkja 
+                    og vonda hliðin er oftast með rauð geislasverð. Fólkið sem er með geislasverð er svo 
+                    kallað jedi og er sagt að þeir eru með einhvern svona force og geta þau notað 
+                    þennan force til að færa hluti með huganum og gert aðra hluti. 
+                </p>
+            </div>
+        </section>
+        <section class="col_2 section-4" id="FunFacts">
+            <div class="text-3">
+                <h2>Fun Fact About StarWars.</h2>
+                <p>
+                    1.	StarWars er eitt af þekktustu mynda seríum í heiminum ásamt öðrum.  
+                    2.	Það tók sirka 4 ár að gera fyrstu myndina.
+                    3.	Karakterinn yoda var næstum því sðilað af apa.
+                    4.	Orðið “Ewok” var aldrei sagt í upprunulega þríleiknum.
+                    5.	Andlitið á Boba Fett er sýnilegt í fyrstu myndunum.
+                    6.	Myndin “Return Of The Jedi” var næstum með allt öðruvísi endi.
+                    7.	StarWars myndirnar eru búnar að fá 10. Milljarða í tekjur.
+                    8.	Röddin á krakternum “Chewbacca” var gerð með hljóðum frá alskonar dýrum.
+                    9.	Karakterinn “R2-D2” uprunalega talaði ensku og var smá dónalegur.
+                    10.	Í dag eru til 7 litir fyrir geislasverðin.
+                </p>
+            </div>
+            <div>
+                <img src="images/Mynd5.jpg" alt="">
+            </div>
+        </section>
+    </main>
+    <footer class="foot col_3">
+        <nav>
+        <ul>
+            <li><a href="https://www.starwars.com" target="_blank"><span class="icon-sphere"></span> StarWars.com</a></li>
+            <li><a href="https://www.boozt.com/is/is/star-wars/kids?msclkid=964347c12a68119e31b92000a5af955b&utm_source=bing&utm_medium=cpc&utm_campaign=is_BS_Fashion_CN_Brand_Kids_Oct2024&utm_term=Star%20Wars&utm_content=Star%20Wars%20-%20Kids" target="_blank"><span class="icon-checkmark"></span> StarWars Products</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank"><span class="icon-file-picture"></span> Wikepedia</a></li>
+            <li><a href="https://www.starwars.com/films" target="_blank"><span class="icon-music"></span> StarWars Films</a></li>
+            <li><a href="https://disney.fandom.com/wiki/Star_Wars" target="_blank"><span class="icon-film"></span> Disney StarWars</a></li>
+        </ul>
+        </nav>
+        <nav>
+        <ul>
+            <li><a href="https://www.starwars.com" target="_blank"><span class="icon-sphere"></span> StarWars.com</a></li>
+            <li><a href="https://www.boozt.com/is/is/star-wars/kids?msclkid=964347c12a68119e31b92000a5af955b&utm_source=bing&utm_medium=cpc&utm_campaign=is_BS_Fashion_CN_Brand_Kids_Oct2024&utm_term=Star%20Wars&utm_content=Star%20Wars%20-%20Kids" target="_blank"><span class="icon-checkmark"></span> StarWars Products</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Star_Wars" target="_blank"><span class="icon-file-picture"></span> Wikepedia</a></li>
+            <li><a href="https://www.starwars.com/films" target="_blank"><span class="icon-music"></span> StarWars Films</a></li>
+            <li><a href="https://disney.fandom.com/wiki/Star_Wars" target="_blank"><span class="icon-film"></span> Disney StarWars</a></li>
+        </ul>
+        </nav>
+        <dl>              <!--Description list -->
+        <dt>Nafn</dt>
+            <dd><span class="icon-logo_1"></span> Júlíus Kristjánsson</dd>
+        <dt>Tölvupóstur</dt>
+            <dd><span class="icon-logo_1"></span> julius.kristjanss@gmail.com</dd>
+        <dt>Vefhönnun</dt>
+            <dd><span class="icon-logo_1"></span> VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+        </dl>
+    </footer>
+    <div id="Login" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <form method="get" action="takk.html" class="login" id="Login">
+                <fieldset>
+                    <legend>Innskráning</legend>
+                    <p class="padding">Nafn: </p>
+                    <p class="padding"><input type="text" required></p>
+                    <p class="padding">Lykilorð: </p>
+                    <p class="padding"><input type="password" required></p>
+                    <p class="padding"><input type="submit" value="Innskrá"></p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div class="talað">
+        <input type="checkbox" id="Spjallbox">
+        <label for="Spjallbox">?</label>
+        <form action="takk.html" class="pop">
+            <fieldset>
+                <legend>Spjallbox</legend>
+                <p>
+                Nafn: <br>
+                <input type="text" placeholder="Name" required>
+                </p>
+                <p>
+                Tölvupóstur: <br>
+                <input type="email" placeholder="Email" required>
+                </p>
+                <p>
+                Skilaboð: <br>
+                <textarea type="text" name="Message" placeholder="Message" rows="4" cols="58.5"></textarea>
+                </p>
+                <p><input type="submit" value="Senda" class="button"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

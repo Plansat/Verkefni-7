@@ -1,0 +1,49 @@
+
+
+.center {
+    text-align: center;
+}
+
+.logo-2 {
+    width: 15rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+.bannerBg {
+    background-color: #EC0505;
+}
+
+body {
+    background-color: #2A2A2A;
+    color: #FFFFFF;
+}
+
+@media  screen and (min-width: 700px) {
+    .logo-2 {
+        width: 25rem;
+    }
+}
+
+@media  screen and (min-width: 800px) {
+    .col-3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo-2 {
+        width: 30rem;
+    }
+}

@@ -1,0 +1,86 @@
+
+a button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	color: var(--nc-lk-tx);
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+a button[disabled],
+button[disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled],
+input[type="button"][disabled] {
+	cursor: default;
+	opacity: .5;
+
+	/* Set the [X] cursor while hovering a disabled link */
+	cursor: not-allowed;
+}
+
+fieldset {
+	margin-top: 1rem;
+	padding: 2rem;
+	border: 3px solid var(--blue);
+	border-radius: 4px;
+}
+
+legend {
+	padding: .5rem;
+	font-weight: 600;
+}
+
+textarea,
+select,
+input {
+	padding: 6px 12px;
+	margin-bottom: .5rem;
+	background: var(--black);
+	color: var(--nc-tx-2);
+	border: 2px solid var(--blue);
+	border-radius: 4px;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+textarea,
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="time"] {
+    width: 80%;
+	padding: .5rem;
+}
+
+button {
+	background-color: var(--blue);
+}
+
+button:hover {
+	background-color: var(--red);
+}
+
+button:active {
+	background-color: var(--black);
+}
+
+::-webkit-calendar-picker-indicator {
+	background-color: var(--green-bg);
+	border-radius: 50%;
+}
+

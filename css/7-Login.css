@@ -1,0 +1,75 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+    z-index: 20;
+}
+
+.popup {
+    margin: 2rem;
+    padding: 1rem;
+    background: var(--red);
+    border-radius: 5px;
+    max-width: 37.5rem;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--blue);
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.padding {
+    margin: 0rem;
+    padding-top: 1rem;
+}
+
+.padding input[type="text"],
+.padding input[type="password"] {
+    width: 100%;
+}
+
+.padding input {
+    padding: 6px 12px;
+    margin-bottom: .5rem;
+    background: var(--black);
+    color: var(--nc-tx-2);
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.padding input[type="submit"] {
+    background-color: var(--blue);
+}
+
+.login fieldset {
+    border: 1px solid var(--blue);
+}
+
+@media screen and (min-width: 37.5rem){
+    .popup{
+        margin: 2rem auto;
+    }
+}

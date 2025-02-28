@@ -1,0 +1,22 @@
+
+.col_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.col_3 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 60rem) {
+    .col_2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .col_3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

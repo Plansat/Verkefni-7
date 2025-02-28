@@ -1,0 +1,79 @@
+
+#toggle {
+    display: none;
+}
+.topnav {
+    margin: 0;
+    padding: .5rem;
+}
+
+.topmenu {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    position: fixed;
+    width: 90%; /*ATH*/
+    top: 3.5rem;
+    right: -80rem;
+    z-index: 20;
+    background-color: var(--black);
+    transition: all .5s ease;
+}
+
+.topmenu a {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.topnav label {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0 .3rem;
+    font-size: 1.5rem;
+}
+
+.topnav label:hover, 
+.topnav label:active {
+    background-color: var(--red-bg);
+}
+
+#toggle:checked ~ .topmenu {
+    right: 1.5rem;
+    transition: all .5s ease;
+}
+
+@media screen and (min-width: 48rem) {
+    #toggle:checked ~ .topmenu {
+        right: 2.5rem;
+        transition: all .5s ease;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .topmenu {
+        /* position: relative; ATH */
+        width: 100%;
+        top: 0;
+        right: 0;
+        flex-flow: row;
+        justify-content: center;
+        transition: none;
+    }
+    .topmenu a {
+        border: 0;
+    }
+
+    .topnav label {
+        display: none;
+    }
+
+    #toggle:checked ~ .topmenu {
+        right: 0rem;
+        transition: all .5s ease;
+    }
+}

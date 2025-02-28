@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+:root {
+    --font-oswald: 'Oswald', sans-serif;
+    
+    --nc-tx-1: #FFFFFF;	/* H1-H6 */
+	--nc-tx-2: #FFFFFF;	/* Body text */
+	--nc-bg-1: #FFFFFF; 	/* Bakgrunnur 1 */
+	--nc-bg-2: #F6F8FA;	/* Bakgrunnur 2 */
+	--nc-bg-3: #E5E7EB;	/* Bakgrunnur 3 (border line form, ofl)*/
+	--nc-lk-1: #4db8ff;	/* A tengill (link) */
+	--nc-lk-2: #48AAEB;	/* A tengill (hover) */
+	--nc-lk-tx:#FFFFFF;	/* Button + input type */
+	--nc-ac-1: #EC0505;	/* Bakgrunnur selection + mark */
+	--nc-ac-tx: #2A2A2A;	/* Selection + mark*/
+    --blue: #48AAEB; 
+    --red: #EC0505;
+    --black: #2A2A2A;
+
+    	/* Dark theme */	
+	--nc-d-tx-1: #ffffff;
+	--nc-d-tx-2: #eeeeee;
+	--nc-d-bg-1: #000000;
+	--nc-d-bg-2: #111111;
+	--nc-d-bg-3: #222222;
+	--nc-d-lk-1: #449fdb;
+	--nc-d-lk-2: #3e91c9;
+	--nc-d-lk-tx: #FFFFFF;
+	--nc-d-ac-1: #b30505;
+	--nc-d-ac-tx: #FFFFFF;
+    --blue-d: #3985b8;
+    --red-d: #b30505;
+    --black-d: #1d1d1d;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--nc-tx-1: var(--nc-d-tx-1);
+		--nc-tx-2: var(--nc-d-tx-2);
+		--nc-bg-1: var(--nc-d-bg-1);
+		--nc-bg-2: var(--nc-d-bg-2);
+		--nc-bg-3: var(--nc-d-bg-3);
+		--nc-lk-1: var(--nc-d-lk-1);
+		--nc-lk-2: var(--nc-d-lk-2);
+		--nc-lk-tx: var(--nc--dlk-tx);
+		--nc-ac-1: var(--nc-d-ac-1);
+		--nc-ac-tx: var(--nc--dac-tx);
+        --blue: var(--blue-d);
+        --red: var(--red-d);
+        --black: var(--black-d);
+	}
+}
+
+
+body {
+    font-family: var(--font-oswald);
+    margin: 0;
+    padding: 0;
+	color: var(--nc-tx-1);
+	background-color: var(--black);
+}
+
+body a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+body a:hover {
+    color: var(--red);
+}
+
+body a:active {
+	color: var(--black);
+}

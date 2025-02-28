@@ -1,0 +1,67 @@
+#Spjallbox {
+    display: none;
+}
+
+.talað label {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    font-size: 1.3rem;
+    background-color: var(--blue);
+    color: var(--nc-tx-2);
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    z-index: 9;
+}
+
+.pop {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    position: fixed;
+    width: 70%;
+    bottom: -90rem;
+    right: 3.5rem;
+    background-color: var(--red);
+    transition: all .5s ease-in-out;
+    padding-bottom: 2rem;
+}
+
+#Spjallbox:checked ~ .pop {
+    bottom: 3rem;
+    right: 5rem;
+    transition: all .8s;
+    transition-timing-function:cubic-bezier(.51, -0.01, 0.37, 1.72);
+}
+
+fieldset {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.button {
+    background-color: var(--blue);
+    color: var(--nc-tx-2);
+    border-radius: .5rem;
+}
+
+input {
+    border: 2px solid var(--blue);
+}
+
+@media screen and (min-width: 30rem) {
+    .pop {
+        position: fixed;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .pop {
+        position: fixed;
+        max-width: 30%;
+    }
+}
